@@ -1,0 +1,13 @@
+<configuration>
+    <appender name="STDOUT" target="System.out" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%date{yyyy-MM-dd HH:mm:ss} %-36logger{1} %-5level    %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.goyeau.kubernetes.client" level="DEBUG"/>
+
+    <root level="DEBUG">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>
